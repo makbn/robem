@@ -1,8 +1,8 @@
 import torch
 from torch.utils import data
-from em.ditto.ditto_light.dataset import DittoDataset
-from em.ditto.ditto_light.knowledge import *
-from em.ditto.ditto_light.ditto import evaluate, DittoModel
+from em.ditto.ditto_light.ditto_light.dataset import DittoDataset
+from em.ditto.ditto_light.ditto_light.knowledge import *
+from em.ditto.ditto_light.ditto_light.ditto import evaluate, DittoModel
 
 
 def get_full_path(logdir, task):

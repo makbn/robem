@@ -4,9 +4,9 @@ import random
 import numpy as np
 import torch
 
-from em.ditto.ditto_light.ditto import train
-from em.ditto.ditto_light.dataset import DittoDataset
-from em.ditto.ditto_light.knowledge import ProductDKInjector, GeneralDKInjector
+from em.ditto.ditto_light.ditto_light.ditto import train
+from em.ditto.ditto_light.ditto_light.dataset import DittoDataset
+from em.ditto.ditto_light.ditto_light.knowledge import ProductDKInjector, GeneralDKInjector
 
 
 if __name__ == "__main__":

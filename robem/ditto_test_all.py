@@ -1,6 +1,6 @@
 import torch
-from em.ditto.ditto_light.ditto import evaluate, DittoModel
-from em.ditto.ditto_light.dataset import DittoDataset
+from em.ditto.ditto_light.ditto_light.ditto import evaluate, DittoModel
+from em.ditto.ditto_light.ditto_light.dataset import DittoDataset
 import os
 from torch.utils import data
 from em.ditto.ditto_data_alter import DittoItunesAmazonAlter
