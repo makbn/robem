@@ -1,0 +1,3 @@
+[submodule "em/ditto/ditto_light"]
+	path = em/ditto/ditto_light
+	url = https://github.com/megagonlabs/ditto/
