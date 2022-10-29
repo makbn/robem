@@ -31,7 +31,7 @@ def parse_args():
     add_arg('--loss', default='wce', choices=['ce', 'wce', 'asl'],
             help="wce: cross-entropy and wce: weighted cross-entropy asl: asymmetric loss")
     add_arg('--neg_weight', default=0.20, type=float, help="wce & asl loss weight for negative samples")
-    add_arg('--pos_weight', default=0.80, type=float, help="wce & asl loss weight for negative samples")
+    add_arg('--pos_weight', default=0.80, type=float, help="wce & asl loss weight for positive samples")
     add_arg('--folds', default=2, type=int, help="cross validation k-folds >= 1")
     add_arg('--mcn_test', default=True, type=int, help="McNemar’s test for out of domain experiments")
     add_arg('--seed', default=0, type=int, help="random and dataloader seed (-1 if you dont want to set)")

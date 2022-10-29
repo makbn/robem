@@ -23,6 +23,23 @@ Check the [Configuration](https://github.com/makbn/robem/blob/master/em/config.p
 * Dataset: https://github.com/anhaidgroup/deepmatcher/blob/master/Datasets.md
 * Ditto (ditto_light) package: https://github.com/megagonlabs/ditto/tree/master/ditto_light
 
+* Arguments
+| **Arg**        | **Description**                                                           | **Default**    | **Values**                                                                                                                |
+|----------------|---------------------------------------------------------------------------|----------------|---------------------------------------------------------------------------------------------------------------------------|
+| --dataset_name | select dataset                                                            | itunes-amazon  | 'beer-rates', 'itunes-amazon', 'amazon-google', 'abt-buy', 'fodors-zagats' , 'dblp-acm', 'dblp-scholar', 'walmart-amazon' |
+| --lm           | base language model                                                       | roberta-base   | 'bert', 'bert-large', 'roberta-base'                                                                                      |
+| --lr           | learning rate                                                             | 3e-5           | any valid number                                                                                                          |
+| --da           | enable simple data augmentation, without this flag, simple da is disabled | False          | True/False                                                                                                                |
+| --ditto_aug    | enable ditto data augmentation                                            | all            | 'del', 'drop_col', 'append_col', 'drop_token', 'drop_len',             'drop_sym', 'drop_same', 'swap', 'ins', 'all'      |
+| --deep         | enable deep classifier                                                    | True           | True/False                                                                                                                |
+| --addsep       | add attribute separator as special token for to tokenizer and model(LM)   | False          | True/False                                                                                                                |
+| --wd           | weight decay                                                              | 0              | any valid number                                                                                                          |
+| --save_dir     | save directory for model checkpoint                                       | ../checkpoint/ | any valid directory                                                                                                       |
+| --neg_weight   | wce & asl loss weight for non-match samples                               | 0.20           | a valid number between 0.00 and 1.00                                                                                      |
+| --pos_weight   | wce & asl loss weight for positive samples                                | 0.80           | a valid number between 0.00 and 1.00                                                                                      |
+
+Check `em/config.py` for the complete list.
+
 # Citation
 
 Please cite our related paper if you used this code as a part of your research.
