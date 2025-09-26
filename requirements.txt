@@ -1,4 +1,4 @@
-transformers==3.0.2
+transformers==4.53.0
 wandb==0.12.7
 tqdm==4.62.3
 torch==1.10.2
